@@ -4,8 +4,9 @@ import { Outlet, useNavigate} from 'react-router-dom';
 import Footer from "./Footer"
 import axios from "axios";
 import { useDispatch, useSelector } from 'react-redux';
-import {addUser} from "../utils/Slices/User";
+
 import { BASE_URL } from '../CONSTANTS';
+import { addUser } from '../utils/Slices/userSlice';
 
 const Body = () => {
   const navigate = useNavigate();
