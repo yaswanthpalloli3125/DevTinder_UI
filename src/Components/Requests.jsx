@@ -34,7 +34,7 @@ const Requests = () => {
   }, []);
 
   if (!requests) return <p>no connection</p>;
-  if (requests.length === 0) return <p>no new connections</p>;
+  if (requests.length === 0) return <p className="text-center">no new Requests</p>;
 
   return (
     <div>
@@ -56,7 +56,7 @@ const Requests = () => {
 
                   <p>{about}</p>
                   <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Remove</button>
+                    <button className="btn btn-primary" onClick={() => handleRequests("rejected", request._id)}>Remove</button>
                     <button
                       className="btn btn-secondary"
                       onClick={() => handleRequests("accepted", request._id)}

@@ -20,6 +20,8 @@ const Card = ({ user, styleClass}) => {
   }
 
 
+   
+
   return (
     <div className={`card bg-base-300 w-96 shadow-sm ${styleClass? styleClass:"mx-auto"} my-5`}>
       <figure>
