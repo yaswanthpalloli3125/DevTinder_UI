@@ -24,7 +24,7 @@ const EditProfile = ({ user }) => {
       );
       dispatch(addUser(res?.data?.data));
       setToast(true);
-      const toastTimer = setTimeout(()=>{
+     setTimeout(()=>{
            setToast(false);
       },3000)
     } catch (error) {
